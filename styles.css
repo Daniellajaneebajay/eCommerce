@@ -1,0 +1,363 @@
+/* FINAL CSS */
+
+/* SIGN-UP CSS */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0cd;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+span{
+    color: #616a61;
+    font-weight: bold;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #414141;
+}
+header nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #616a61;
+    font-size: 16px;
+    font-weight: bold;
+}
+header nav .theme-toggle {
+    cursor: pointer;
+    font-size: 18px;
+}
+.sign-up-card {
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 40px;
+}
+.sign-up-form {
+    background-color: #616a61;
+    color: white;
+    padding: 40px;
+    flex: 1;
+}
+.sign-up-form h1 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #f4f4e0;
+}
+.sign-up-form p {
+    margin-bottom: 20px;
+    color: #e0e0cd;
+}
+.sign-up-form form {
+    display: flex;
+    flex-direction: column;
+}
+.sign-up-form form .form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.sign-up-form form .form-group input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.sign-up-form form input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.sign-up-form form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #a0afa0;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.sign-up-form form button:hover {
+    background-color: #3e443e;
+}
+.sign-up-image {
+    flex: 1;
+}
+.sign-up-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+    background-color: #333;
+    color: #414141;
+}
+body.dark-theme .sign-up-card {
+    background: #black;
+}
+body.dark-theme .sign-up-form { 
+    background-color: #616a61;
+}
+body.dark-theme .sign-up-form form button {
+    background-color: #a0afa0;
+}
+body.dark-theme .sign-up-form form button:hover {
+    background-color: #3e443e;
+}
+
+/* Dark theme styles for logo and links */
+body.dark-theme header .logo {
+    color: #e0e0cd;
+}
+body.dark-theme header nav a {
+    color: #646A5E;
+}
+#message {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    .sign-up-card {
+        flex-direction: row;
+    }
+    .sign-up-form {
+        flex: 1;
+    }
+    .sign-up-image {
+        display: block;
+        flex: 1;
+    }
+    .sign-up-form form .form-group {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sign-up-form {
+        padding: 60px;
+    }
+    .sign-up-form form .form-group {
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .sign-up-form {
+        padding: 80px;
+    }
+}
+
+/*
+COLOR PALETTE 
+    #646A5E : #616a61
+    #E0E0D4 : #e0e0cd
+    #CCC5B2 : #ccc4aa
+    #9B9589 : #9b9b8e
+    #414141 : #414141
+COLOR PALETTE 
+*/
+
+/* LOG-IN CSS */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0cd;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+span {
+    color: #616a61;
+    font-weight: bold;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #414141;
+}
+header nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #616a61;
+    font-size: 16px;
+    font-weight: bold;
+}
+header nav .theme-toggle {
+    cursor: pointer;
+    font-size: 18px;
+}
+.login-card {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 40px;
+}
+.login-form {
+    background-color: #616a61;
+    color: white;
+    padding: 40px;
+    flex: 1;
+}
+.login-form h1 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #f4f4e0;
+}
+.login-form p {
+    margin-bottom: 20px;
+    color: #e0e0cd;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+.login-form form .form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.login-form form .form-group input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #a0afa0;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+button:hover {
+    background-color: #3e443e;
+}
+.login-image {
+    flex: 1;
+}
+.login-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+    background-color: #333;
+    color: #414141;
+}
+body.dark-theme .login-card {
+    background: #black;
+}
+body.dark-theme .login-form {
+    background-coloe: #616a61;
+}
+body.dark-theme .login-form form button {
+    background-color: #a0afa0;
+}
+body.dark-theme .login-form form button:hover {
+    background-color: #3e443e;
+}
+
+/* Dark theme styles for logo and links */
+body.dark-theme header .logo {
+    color: #e0e0cd;
+}
+body.dark-theme header nav a {
+    color: #646A5E;
+}
+#message {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    .login-card {
+        flex-direction: row;
+    }
+    .login-image {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+    .login-form h1 {
+        font-size: 32px;
+    }
+    .login-form p {
+        font-size: 18px;
+    }
+    .form-group input {
+        font-size: 16px;
+    }
+    button {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+    .login-form h1 {
+        font-size: 36px;
+    }
+    .login-form p {
+        font-size: 20px;
+    }
+    .form-group input {
+        font-size: 18px;
+    }
+    button {
+        font-size: 20px;
+    }
+}
